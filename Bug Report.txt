@@ -1,0 +1,47 @@
+Bug Report
+
+Title: No Error Message Displayed for Empty "Message" Field in Contact Form
+
+Priority: High
+Severity: Medium
+Reported By: Shubham Mahanubhav
+Reported On: 02/08/2024
+
+Description:
+When submitting the Contact Us form with an empty "Message" field, no error message is displayed. This allows users to submit incomplete forms, potentially leading to missing information for the marketing team.
+
+Steps to Reproduce:
+1. Navigate to https://www.tendable.com
+2. Click on "Contact Us" in the navigation menu
+3. In the contact form:
+   - Select "Marketing" from the dropdown
+   - Fill in all fields except the "Message" field
+   - Click the Submit button
+4. Observe the response
+
+Expected Result:
+An error message should be displayed, indicating that the "Message" field is required.
+
+Actual Result:
+No error message is displayed, and the form appears to submit successfully.
+
+Environment:
+- Browser: [e.g., Chrome 91.0.4472.124]
+- Operating System: [e.g., Windows 10]
+- Screen Resolution: [e.g., 1920x1080]
+
+Additional Information:
+- This issue was discovered during automated testing of the contact form.
+- The test script that uncovered this issue can be found in the GitHub repository: [link to your GitHub repo]
+
+Possible Impact:
+- Marketing team may receive incomplete information from potential leads.
+- Users might assume their message was sent successfully when it was incomplete.
+
+Suggested Fix:
+Implement client-side validation for the "Message" field to ensure it's not empty before form submission. Also, add server-side validation as a fallback.
+
+Screenshots:
+Attached in REDME file
+
+
